@@ -1,0 +1,11 @@
+Servlet 작성 규칙
+	import javax.servlet
+	public 
+	httpServlet 상속
+	doGet doPoset 반드시 오버라이딩
+
+
+	
+	
+	
+	
