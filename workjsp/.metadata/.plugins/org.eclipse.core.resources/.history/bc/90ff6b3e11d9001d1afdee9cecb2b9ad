@@ -1,0 +1,9 @@
+package m2board;
+
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/m2board/download.do")
+public class DownloadController extends HttpServlet
+{
+	
+}

@@ -1,0 +1,19 @@
+package m2board;
+
+public class MBoardDTO 
+{
+
+	
+	private String idx;
+	private String name;
+	private String title;
+	private String content;
+	private java.sql.Date postdate;
+	private String ofile;	
+	private String nfile;
+	private int downcount;
+	private int visitcount;
+	private String pass;
+	
+	
+}

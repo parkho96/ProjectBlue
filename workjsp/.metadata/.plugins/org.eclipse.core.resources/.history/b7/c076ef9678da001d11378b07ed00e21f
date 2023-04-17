@@ -1,0 +1,33 @@
+package api;
+
+import java.io.IOException;
+import java.security.Provider.Service;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import oracle.net.aso.s;
+
+@WebServlet("NaverSearchAPI.do")
+public class SearchAPI extends HttpServlet
+{
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
+	{
+		//네이버 api guide 예제를 참조
+		//인증 정보 설정
+		String clientId = "CQmk07AGguSHe7wJ1RiE"; // 애플리케이션 클라이언트 아이디
+		String clientSecret = "zmxaJjkC2R";		  // 애플리케이션 클라이언트 비밀번호
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,8 @@
+package m2board;
+
+import javax.servlet.http.HttpServlet;
+
+public class ListController extends HttpServlet
+{
+	
+}

@@ -1,0 +1,12 @@
+package websocketChat;
+
+import javax.websocket.server.ServerEndpoint;
+
+@ServerEndpoint("/ChatingServer")
+public class ChatServer 
+{
+	
+	private static Set<Session> clients() {
+
+	}
+}

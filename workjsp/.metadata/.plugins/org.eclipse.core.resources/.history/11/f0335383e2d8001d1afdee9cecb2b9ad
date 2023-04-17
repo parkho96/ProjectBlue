@@ -1,0 +1,68 @@
+package m2board;
+
+
+import java.beans.Statement;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
+import java.util.Vector;
+
+import common.JDBConnPool;
+import fileUpDown.MyFileDto;
+
+public class MBoardDAO extends JDBConnPool
+{
+	public MBoardDAO()
+	{
+		super();
+	}
+	
+	//fileboard table 검색 조건 고려 결과 전체 개수
+	public int countAll(Map<String, Object> map)
+	{
+		int totalCount=0;
+		
+		String query= "select count(*) from fileboard";
+		if(map.get("searchStr")!=null)
+		{	
+			query +="where "+ map.get("searchType") +"like '%"+ map.get("searchStr")+"%'";		
+		}
+		
+		try 
+		{
+			stmt = con.createStatement();
+			rs   = stmt.executeQuery(query);
+			// 처음꺼는 속성이기에 다음꺼로 넘기고 읽어가야 한다/
+			rs.next();
+			totalCount = rs.getInt(1);
+		} 
+		catch(Exception e) 
+		{
+			System.out.println("게시물 카운트 중 에러");
+			e.printStackTrace();
+		}
+		return totalCount;
+	}
+	
+	public List<MBoardDTO> getListPage(Map<String,Object> map)
+	{
+		List<MBoardDTO> bl = new Vector<>();
+		String query = "";
+		
+		
+		return bl;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

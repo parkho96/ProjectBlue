@@ -1,0 +1,22 @@
+package fileUpDown;
+
+import common.JDBConnPool;
+import fileUpDown.MyFileDto;
+
+public class MyFileDao extends JDBConnPool
+{
+	public int insertFile(MyFileDto dto)
+	{
+		int applyResult =0;
+		try
+		{
+			String query = "INSERT INTO myfile ( "
+					+ "idx, name, title, cate, ofile, nfile) "
+					+ "VALUES ( "
+					+ "seq_board_num.nextval, ?, ?, ?, ?, ?)";
+			psmt = con.prepareStatement(query);
+			psmt.setString(1, dto.getName);
+					
+		}
+	}
+}
