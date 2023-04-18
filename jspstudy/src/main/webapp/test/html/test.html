@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>nav bar</title>
+</head>
+<script src="https://kit.fontawesome.com/2a2f1053de.js" crossorigin="anonymous"></script>
+<style>
+body{
+	margin:0
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #8080c0;
+	padding:8px,12px;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.navbar_logo{
+	font-size:24px;
+	color:white;
+}
+.navbar_menu{
+	display:flex;
+	list-style : none;
+	padding-left: 0;
+}
+.login_btn{
+ background-color: white;
+
+  border: none;
+
+  color: black;
+
+  padding: 15px 30px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 16px;
+
+  margin: 4px 2px;
+
+  cursor: pointer;
+ }
+</style>
+<body>
+	<nav class="navbar">
+		<div class="navbar_logo">
+		 <i class="fa-brands fa-accusoft"></i>
+		 <a href ="">블루아카이브</a>
+		</div>
+		
+		<div class="navbar_menu">
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">앨범</a></li>
+				<li><a href="">Weddings</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Bookings</a></li>
+			</ul>
+		</div>
+		
+		<div class="navbar_links">
+			<button class="login_btn" onclick="location.href='./ss.html'">로그인 </button>
+		</div>
+		
+		
+	</nav>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+body{
+	margin:0
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #8080c0;
+	padding:8px,12px;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.navbar_logo{
+	font-size:24px;
+	color:white;
+}
+.navbar_menu{
+	display:flex;
+	list-style : none;
+	padding-left: 10;
+}
+
