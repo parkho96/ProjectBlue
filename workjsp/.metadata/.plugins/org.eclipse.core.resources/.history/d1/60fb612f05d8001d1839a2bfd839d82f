@@ -1,9 +1,0 @@
-package fileUpDown;
-
-import java.util.LList;
-import common.JDBConnPool;
-
-public class MyFileDao extends JDBConnPool
-{
-
-}
